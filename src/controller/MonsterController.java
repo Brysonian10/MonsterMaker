@@ -1,5 +1,6 @@
 package controller;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 import model.MarshmallowMonster;
 
@@ -20,9 +21,15 @@ public class MonsterController
 	//method section
 	public void start()
 	{
+		JOptionPane.showMessageDialog(null, "Why hello there");
+		//Use this  method instead of "System.out.println("words")
+		
+		
 		System.out.println(myMonster);
+		JOptionPane.showMessageDialog(null, myMonster);
 		myMonster.setArmCount(9999);
 		System.out.println("My Monster has this many arms: " + myMonster.getArmCount());
+		JOptionPane.showMessageDialog(null, myMonster);
 		
 		//make a new monster and customize from user input
 		MarshmallowMonster userMonster;
