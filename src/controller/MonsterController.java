@@ -41,28 +41,37 @@ public class MonsterController
 	{
 		//asks for the name and then prints  it
 			System.out.println("Welcome to make your Monster! What is your monster's name?");
+			JOptionPane.showMessageDialog(null, myMonster);
 			Scanner inputScanner = new Scanner(System.in);
 			String name = inputScanner.nextLine();
 			System.out.println("Your Monster's name is " + name);
+			JOptionPane.showMessageDialog(null, myMonster);
 			
 			//asks how many eyes they want on their monster				System.out.println("How many eyes do you want " + name + " to have?");
 			System.out.println("How many eyes does " + name + " have?");
+			JOptionPane.showMessageDialog(null, myMonster);
 			String eyes = inputScanner.nextLine();
 			System.out.println(name + " has " + eyes + " eyes. Wowsies!");
+			JOptionPane.showMessageDialog(null, myMonster);
 			
 				//asks how many arms the monster has
 			System.out.println("How many arms do you want " + name + " to have?");
+			JOptionPane.showMessageDialog(null, myMonster);
 			String arms = inputScanner.nextLine();
-			System.out.println(name + "has " + arms + " arms, thats pretty exciting.");				
+			System.out.println(name + "has " + arms + " arms, thats pretty exciting.");		
+			JOptionPane.showMessageDialog(null, myMonster);
 			
 			//asks how many legs the monster has
 			System.out.println("How many legs do you want " + name + " to have?");
+			JOptionPane.showMessageDialog(null, myMonster);
 			//extra stuff
 			String legs = inputScanner.nextLine();
 			System.out.println(name + " has " +  legs + " legs, thats pretty dang cool if you as me!");
+			JOptionPane.showMessageDialog(null, myMonster);
 			
 			//asks how many noses does your monster have?
 			System.out.println("And does your monster have a nose?");
+			JOptionPane.showMessageDialog(null, myMonster);
 			String noses = inputScanner.nextLine();
 			if (noses .equals ("yes"))
 			{
@@ -73,8 +82,11 @@ public class MonsterController
 				System.out.println("Your monster doesn't have a nose.");
 			}
 			
+			JOptionPane.showMessageDialog(null, myMonster);
+			
 		//conclusion
 			System.out.println(name + " has " + eyes + " eyes, " + arms + " arms, and " + legs + " legs!!");
+			JOptionPane.showMessageDialog(null, myMonster);
 			
 		
 	}
