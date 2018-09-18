@@ -37,15 +37,7 @@ public class MonsterController
 		MarshmallowMonster userMonster = new MarshmallowMonster();
 		
 		userInput();
-		
-		String userNumber = JOptionPane.showInputDialog(null, "How many arms?");
-		
-		if(validInt(userNumber))
-		{
-			int arms = Integer.parseInt(userNumber);
-			userMonster.setArmCount(arms);
-			
-		}
+
 	}
 	
 	public boolean validInt(String maybeInt)
@@ -98,6 +90,10 @@ public class MonsterController
 			//System.out.println("Your Monster's name is " + name);
 			JOptionPane.showMessageDialog(null, "Your Monster's name is " + userMonsterName);
 			
+			String answer = JOptionPane.showInputDialog(null, "Are you sure you want to call your moster this?");
+			
+			if (answer .equals("yes"))
+			{
 			//asks how many eyes they want on their monster				System.out.println("How many eyes do you want " + name + " to have?");
 			//System.out.println("How many eyes does " + name + " have?");
 			String eyes = JOptionPane.showInputDialog(null, "How many eyes does " + userMonsterName + " have?");
@@ -121,7 +117,7 @@ public class MonsterController
 			JOptionPane.showMessageDialog(null, userMonsterName + " has " +  legs + " legs, thats pretty dang cool if you ask me!");
 			
 			//asks how many noses does your monster have?
-			System.out.println("And does your monster have a nose?");
+			//System.out.println("And does your monster have a nose?");
 			String noses = JOptionPane.showInputDialog(null, "And does your monster have a nose?");
 			//String noses = inputScanner.nextLine();
 			if (noses .equals ("yes"))
@@ -139,6 +135,10 @@ public class MonsterController
 		//conclusion
 			//System.out.println(userMonsterName + " has " + eyes + " eyes, " + arms + " arms, and " + legs + " legs!!");
 			JOptionPane.showMessageDialog(null, userMonsterName + " has " + eyes + " eyes, " + arms + " arms, and " + legs + " legs!!");
+			} else 
+			{
+				JOptionPane.showMessageDialog(null, "Well I guess that sucks how you messed that up, I guess you don't get a monster anymore, bye");
+			}
 			
 		
 	}
